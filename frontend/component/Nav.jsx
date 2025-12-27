@@ -26,7 +26,9 @@ const Nav = () => {
       {/* container  */}
       <div className='w-[90%] mx-auto flex justify-between gap-10 relative'>
         {/* logo  */}
-        <div className='text-2xl font-bold'>MyLogo</div>
+        <div className='text-2xl font-bold'>
+          <a href="/">MYIT</a>
+        </div>
         {/* desktop nav items  */}
         <ul className='gap-8 items-center hidden md:flex'>
             {navItems.map((item, index) => (
@@ -47,7 +49,7 @@ const Nav = () => {
         <ul className={`${isOpen ? 'flex' : 'hidden'} md:hidden flex-col gap-2 absolute top-10 right-0 bg-blue-500 p-4`}>
             {navItems.map((item, index) => (
                 <li key={index}>
-                    <Link to={item.link} className='hover:text-gray-300 outline-none focus:text-gray-300'>{item.name}</Link>
+                    <Link onClick={()=>setIsOpen(!isOpen)} to={item.link} className='hover:text-gray-300 outline-none focus:text-gray-300'>{item.name}</Link>
                 </li>
             ))}
         </ul>
