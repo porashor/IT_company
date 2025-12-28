@@ -3,7 +3,7 @@ import image from "../img/Map.webp"
 import ClientSlider from './ClientSlider'
 const WorldWideClient = () => {
   return (
-    <div>
+    <div data-aos="zoom-in">
         <div className='my-5 md:my-10  py-5'>
         {/* container  */}
             <div className='w-[90%] md:w-[80%] mx-auto'>

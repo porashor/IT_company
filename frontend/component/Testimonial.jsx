@@ -34,10 +34,10 @@ export default function Testimonials() {
 
   return (
     <div className="w-[90%] md:w-[80%] mx-auto">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center py-3">What client says about us!</h1>
+        <h1 data-aos='zoom-in' className="text-2xl md:text-3xl lg:text-4xl font-bold text-center py-3">What client says about us!</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
       {testimonials.map((t, index) => (
-        <div key={index} className="testimonial">
+        <div data-aos="zoom-in" data-aos-delay={index * 100} key={index} className="testimonial">
           <div className=" p-6 rounded-lg shadow-md hover:scale-105 transition-transform bg-gray-100">
             <div className="text-9xl font-bold">"</div>
             <p className="mt-2 text-gray-950 text-xl line-clamp-2">{t.feedback}</p>

@@ -14,7 +14,7 @@ const ServiceItem = ({ title, children }) => (
 );
 
 const Card = ({ title, children, className = '' }) => (
-  <div className={`p-8 bg-white rounded-lg shadow-lg ${className}`}>
+  <div data-aos="zoom-in" className={`p-8 bg-white rounded-lg shadow-lg ${className}`}>
     <h2 className="text-2xl font-bold mb-4 text-gray-800">{title}</h2>
     {children}
   </div>

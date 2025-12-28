@@ -1,6 +1,7 @@
 import React from 'react'
 import AgencySection from '../component/AgencySec'
 import CountDetails from '../component/CountDetails'
+import Testimonials from '../component/Testimonial'
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
       <div className='w-[95%] md:w-[90%] mx-auto my-10'>
         <AgencySection />
       </div>
+      <Testimonials/>
       <CountDetails/>
     </div>
   )
