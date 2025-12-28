@@ -4,8 +4,8 @@ import { services } from './routes/data.js';
 import cors from 'cors';
 
 const corsOptions = {
-  origin: ['http://localhost:5173', "https://yourit.netlify.app"],
-  credentials: true, //access-control-allow-credentials:true
+  origin: ["http://localhost:5173", "https://yourit.netlify.app"],
+  credentials: true,
   optionSuccessStatus: 200,
 };
 
