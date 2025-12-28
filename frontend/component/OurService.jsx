@@ -26,14 +26,6 @@ const OurService = () => {
         {services?.map(service => (
           <ServiceCard key={service.id} service={service} />
         ))}
-        {/* <ServiceCard/>
-        <ServiceCard/>
-        <ServiceCard/>
-        <ServiceCard/>
-        <ServiceCard/>
-        <ServiceCard/>
-        <ServiceCard/>
-        <ServiceCard/> */}
       </div>
     </div>
   )

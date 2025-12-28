@@ -24,7 +24,7 @@ const App = () => {
     });
     }, []);
   return (
-    <div className=''>
+    <div className='' style={{ fontFamily: "'Smooch Sans', sans-serif" }}>
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />

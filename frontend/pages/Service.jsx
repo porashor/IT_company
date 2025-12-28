@@ -2,6 +2,7 @@ import React from 'react'
 import AgencySection from '../component/AgencySec'
 import CountDetails from '../component/CountDetails'
 import OurService from '../component/OurService'
+import Speciality from '../component/Speciality'
 
 const Service = () => {
   return (
@@ -12,6 +13,7 @@ const Service = () => {
         <p className='text-slate-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <OurService/>
+      <Speciality/>
     </div>
   )
 }

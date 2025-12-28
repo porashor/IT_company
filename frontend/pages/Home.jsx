@@ -6,6 +6,7 @@ import OurService from '../component/OurService'
 import Speciality from '../component/Speciality'
 import ClientArea from '../component/ClientArea'
 import WorldWideClient from '../component/WorldWideClient'
+import Testimonials from '../component/Testimonial'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <CountDetails/>
       <Support />
       <OurService/>
+      <Testimonials/>
       <Speciality/>
       <ClientArea/>
       <WorldWideClient/>

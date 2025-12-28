@@ -7,6 +7,7 @@ import secure from "../img/secure.png";
 import welcome from "../img/welcome.png";
 import consult from "../img/consult.png";
 import Aos from "aos";
+import Video from "../img/video.mp4"
 const Banner = () => {
   // bannerData.js
   const bannerSlides = [
@@ -81,7 +82,12 @@ const Banner = () => {
     }
   };
   return (
-    <div className="w-full h-fit md:h-[600px] flex items-center p-2 md:p-5 text-white bg-[#1D3E6D]">
+    <div className="w-full h-fit md:h-[600px] flex items-center p-2 md:p-5 text-white relative">
+      {/* background */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+      <video src={Video} autoPlay loop muted className="w-full h-full object-cover" controls={false}></video>
+      <div className="z-50 w-full h-full absolute top-0 left-0 bg-black opacity-70"></div>
+      </div>
       {/* container */}
       <div className="w-full md:w-[80%] py-2 mx-auto">
         <Slider {...settings}>
@@ -89,7 +95,7 @@ const Banner = () => {
             <div  data-aos={slide.id % 2 === 0 ? "fade-right" : "fade-left"} className={`w-full ${"bg-"+slide.bgColor}`} style={{background: slide.bgColor}} key={slide.id}>
               <div className="grid grid-cols-1 md:grid-cols-2  gap-2 items-center justify-between">
                 {/* details */}
-                <div className="flex flex-col items-center justify-center text-center md:text-left w-full h-full p-4">
+                <div className="flex flex-col items-center justify-center text-center md:text-left order-2 md:order-1 w-full h-full p-4">
                   <h2 className="text-2xl md:text-4xl font-bold mb-4">
                     {slide.title}
                   </h2>
@@ -101,7 +107,7 @@ const Banner = () => {
                   </button>
                 </div>
                 {/* image  */}
-                <div className="w-full flex justify-center items-center p-4">
+                <div className="w-full flex justify-center items-center p-4 order-1 md:order-2">
                   <img  data-aos-delay="200" data-aos="fade-up" 
                     src={slide.image} className="w-[700px] aspect-auto object-cover"
                   />

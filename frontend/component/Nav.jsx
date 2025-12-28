@@ -22,7 +22,7 @@ const Nav = () => {
       }
     ];
   return (
-    <div className='bg-[#1D3E6D] p-4 text-white flex justify-around sticky top-0 z-50'>
+    <div className='bg-[#1D3E6Df1] p-4 text-white flex justify-around sticky top-0 z-50 shadow-xl'>
       {/* container  */}
       <div className='w-[90%] mx-auto flex justify-between gap-10 relative'>
         {/* logo  */}
