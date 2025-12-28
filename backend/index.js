@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { services } from './routes/data.js';
 import cors from 'cors';
+const app = express();
 
 const corsOptions = {
   origin: [
@@ -15,7 +16,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 dotenv.config();
-const app = express();
 app.use(express.json());
 
 
