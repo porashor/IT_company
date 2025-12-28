@@ -1,6 +1,6 @@
 export default function HelloForm() {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md w-full">
+    <div data-aos="zoom-in" className="bg-white p-6 rounded-lg shadow-md w-full">
       <h2 className="text-2xl font-bold mb-4 text-[#1D3E6D]">SAY HELLO!</h2>
       <form className="space-y-4">
         <input type="text" placeholder="Name" className="w-full border p-2 rounded" />

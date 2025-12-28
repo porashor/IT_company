@@ -1,6 +1,6 @@
 export default function ContactInfo() {
   return (
-    <div className="bg-gradient-to-br from-[#1D3E6D] to-[#0F172A] text-white p-6 rounded-lg shadow-md w-full space-y-6">
+    <div data-aos="zoom-in" className="bg-gradient-to-br from-[#1D3E6D] to-[#0F172A] text-white p-6 rounded-lg shadow-md w-full space-y-6">
       <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
       <p className="text-sm mb-4">We’re all ears! Talk to us about your needs, and we’ll provide the best possible solution.</p>
 
